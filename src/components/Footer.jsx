@@ -21,7 +21,7 @@ const Footer = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:3001/api/feedback', formData);
+            await axios.post('https://api-techy.onrender.com/api/feedback', formData);
             alert('Feedback submitted successfully');
             setFormData({
                 firstName: '',
